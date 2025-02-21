@@ -1,5 +1,9 @@
 #### Setup for kubectl alias
 
+Thêm vào /etc/profile để áp dụng với tất cả các user
+
+Còn áp dụng với mỗi user hiện tại thì ~/.bashrc
+
 ```bash
 alias k='kubectl'
 alias kn='kubectl config set-context --current --namespace'
@@ -11,11 +15,15 @@ complete -F __start_kubectl k
 export GPG_TTY=$(tty)
 ```
 
+```bash
+source /etc/profile # (hoặc ~/.bashrc)
+```
+
 
 
 #### Setup for colorful bash
 
-Add this line at the end of ~/.bashrc
+Add this line at the end of ~/.bashrc (/etc/profile)
 
 ```bash
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
@@ -24,7 +32,7 @@ PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31
 Save the file and:
 
 ```bash
-source ~/.bashrc
+source ~/.bashrc # (/etc/profile)
 ```
 
 
@@ -58,5 +66,13 @@ alias kl='kubecolor logs'
 alias ke='kubecolor exec -it'
 complete -F __start_kubectl k
 export GPG_TTY=$(tty)
+```
+
+Thêm vào /etc/profile để áp dụng với tất cả các user
+
+Còn áp dụng với mỗi user hiện tại thì ~/.bashrc
+
+```bash
+source /etc/profile # (hoặc ~/.bashrc)
 ```
 
