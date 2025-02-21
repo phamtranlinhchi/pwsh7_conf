@@ -27,3 +27,36 @@ Save the file and:
 source ~/.bashrc
 ```
 
+
+
+#### Setup for colorful kubectl
+
+Need brew for installation
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+```
+
+
+
+Install kubecolor as alternative for kubectl
+
+```bas
+brew install hidetatz/tap/kubecolor
+```
+
+```bash	
+alias k='kubecolor'
+alias kn='kubecolor config set-context --current --namespace'
+alias kgp='kubecolor get pod'
+alias kgs='kubecolor get service'
+alias kl='kubecolor logs'
+alias ke='kubecolor exec -it'
+complete -F __start_kubectl k
+export GPG_TTY=$(tty)
+```
+
