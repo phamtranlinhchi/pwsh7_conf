@@ -39,7 +39,7 @@ source ~/.bashrc # (/etc/profile)
 
 #### Setup for colorful kubectl
 
-Need brew for installation
+Brew for installation
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -49,12 +49,11 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 ```
 
-
-
 Install kubecolor as alternative for kubectl
 
 ```bas
 brew install hidetatz/tap/kubecolor
+# or apt install kubecolor 
 ```
 
 ```bash	
