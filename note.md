@@ -78,6 +78,7 @@ source /etc/profile # (hoặc ~/.bashrc)
 #### Other Setup
 ```bash	
 alias l='ls -lh'
+alias find='find . -name '
 alias ..='cd ..'
 alias ...='cd ../..'
 ```
