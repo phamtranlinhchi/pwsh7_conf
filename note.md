@@ -75,3 +75,11 @@ Còn áp dụng với mỗi user hiện tại thì ~/.bashrc
 source /etc/profile # (hoặc ~/.bashrc)
 ```
 
+#### Other Setup
+```bash	
+alias ls='ls -lh'
+```
+
+```bash
+source /etc/profile # (hoặc ~/.bashrc)
+```
