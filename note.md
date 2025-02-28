@@ -1,7 +1,7 @@
 #### Note
 Thêm vào /etc/profile để áp dụng với tất cả các user
 Còn chỉ muốn áp dụng với user hiện tại thì ~/.bashrc
-=> Sau khi thêm các lệnh setup chỉ cần source ~/.bashrc vì trong ~/.bashrc đã có phần tải các setup trong /etc/profile
+=> Sau khi thêm các lệnh setup chỉ cần `source ~/.bashrc` vì trong ~/.bashrc đã có phần tải các setup trong /etc/profile
 
 #### Setup for colorful bash
 
