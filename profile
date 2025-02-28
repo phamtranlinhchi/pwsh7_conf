@@ -29,13 +29,17 @@ readonly TMOUT
 export TMOUT
 umask 022
 
+# Alias for file
 alias l='ls -lh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias find='find . -name '
 
+# For colorful bash
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
 
+# For colorful kubectl
+# apt install kubecolor 
 alias k='kubecolor'
 alias kn='kubecolor config set-context --current --namespace'
 alias kgp='kubecolor get pod'
