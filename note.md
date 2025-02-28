@@ -77,7 +77,7 @@ source /etc/profile # (hoặc ~/.bashrc)
 
 #### Other Setup
 ```bash	
-alias ls='ls -lh'
+alias l='ls -lh'
 ```
 
 ```bash
