@@ -29,6 +29,12 @@ complete -F __start_kubectl k
 export GPG_TTY=$(tty)
 ```
 
+```bash
+# To get all pods live and have color
+apt-get install expect
+watch -c unbuffer kubecolor get pods
+```
+
 #### Setup alias for non-colorful kubectl 
 
 ```bash
