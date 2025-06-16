@@ -26,7 +26,6 @@ alias kgs='kubecolor get service'
 alias kl='kubecolor logs'
 alias ke='kubecolor exec -it'
 complete -F __start_kubectl k
-export GPG_TTY=$(tty)
 ```
 
 ```bash
@@ -45,7 +44,6 @@ alias kgs='kubectl get service'
 alias kl='kubectl logs'
 alias ke='kubectl exec -it'
 complete -F __start_kubectl k
-export GPG_TTY=$(tty)
 ```
 
 
